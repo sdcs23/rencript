@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>RENCRIPT</title>
+    <link REL="stylesheet" TYPE="text/css" HREF="reset.css">
+    <link REL="stylesheet" TYPE="text/css" HREF="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="caja">
+            <img src="imagenes/logo.png" alt="logo" width="130px">
+    </header>
+
+    <!--BODY-->
+    <main>
+        <section>
+            <div class="area1">
+                <textarea class="mensaje1" id="mensaje1" cols="50" rows="12"
+                    placeholder="Escribe aqui tu mensaje" type = "text" onkeypress="return soloLetras(event);"></textarea>
+            </div>
+
+            <div>
+                <h2 class="informacion">Solo letras en minusculas y sin acentos</h2>
+            </div>
+
+            <div class="btn">
+                <button name="encriptar" onclick="botonEncriptar()" class="btn-encriptar">
+                    Encriptar
+                </button>
+
+                <button name="desencriptar" onclick="botonDesencriptar()" class="btn-desencriptar">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensaje2" id="mensaje2" cols="19" rows="15" placeholder="Aqui estara tu texto encriptado"></textarea>
+            <img class="muneco" src="imagenes/imagen.png" alt="muñeco">
+            <div>
+                <button name="copiar" class="btn-copiar" onclick="copiar();">
+                    Copiar
+                </button>
+            </div>
+        </section>
+
+
+    </main>
+    <!--footer-->
+    <footer>
+        <p class="copy">&copy COPYRIGHT RENCRIPT & TRADEMARK 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
